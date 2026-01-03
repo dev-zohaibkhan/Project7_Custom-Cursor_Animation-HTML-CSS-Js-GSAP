@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#main #image #overlay{
+    width: 40vw;
+    height: 40vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+}
+#main #image{
+    width: 40vw;
+    height: 40vh;
+    background-color: green;
+  
+}
+#main #image img{
+    object-fit: cover;
+    width: 40vw;
+    height: 40vh;
+      z-index: 8;
+}
+#cursor{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
